@@ -61,72 +61,88 @@
     <Compile Include="ClaimsController.cs" />
     <Compile Include="CMSController.cs" />
     <Compile Include="CredentialController.cs" />
-    <Compile Include="DataAccessUpgrade\DBHelpers\SqlDataAccessHelper.cs" />
-    <Compile Include="DataAccessUpgrade\DBHelpers\SqlReaderExtensions.cs" />
-    <Compile Include="DataAccessUpgrade\Helpers\AppConfigHelper.cs" />
-    <Compile Include="DataAccessUpgrade\Models\AchFeeInformationByPartyIDModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\AchFeeInformationModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\AchFeeResultsModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\AddressStagingTypesModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\C4CodeSetStatusModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\CALLTRACKINGCALLSBYRANGEModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\CMSCodeSetStatusModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\COMMITTEEACTIVITYSTATUSModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\CommitteeCredentialActivityModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\COMMITTEEMEMBERModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\CredentialActivityByIdModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\CredentialingResultModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\CredentialingScreeningActivityModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\DashboardProviderSummaryModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\DashboardStatisticsGroupsModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\DashboardStatisticsGroupsServicesModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\DashboardStatisticsGroupTotalsModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\DashboardStatisticsModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\GroupMemberProfileForDashboardsModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\MedicaidIdByUserNameModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\ProviderInfoFromUserModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\StagingProviderEnrollmentByTransactionQueueIDModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\InsertCommitteeCredentialActivityModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\MedicaidIDsByMedicaidIDModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\NUBCCodeSetStatusModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PaperRequestByDocumentHandleModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PaperRequestDashboardsModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PAPERREQUESTDOCUMENTByQueueIDModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PAPERREQUESTERROROutstandingByQueueIDModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PAPERREQUESTQUEUEByQueueIDModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PAPERREQUESTQUEUEByUserIDModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PAPERREQUESTQUEUEMatchDataModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PARTYERRORHISTORYModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\PROVIDERCredentialingModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\ProviderNotesModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\RDMCodeSetstatusModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\REGCredentialingCOMMENTSModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\REGHEALTHCAREFACILITYAFFILIATIONModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\REGProviderFeedModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\REQUIRECDSStatesModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\ScreeningActivityUrlModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\StatesModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\UpdateCOMMITTEECREDENTIALACTIVITYModelResult.cs" />
-    <Compile Include="DataAccessUpgrade\Models\UploadAttachmentStatusModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\USStatesModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\WPCCodeSetStatusModel.cs" />
-    <Compile Include="DataAccessUpgrade\Models\RegistrationProviderInfoModel.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\ACHRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\AuthenticationRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\C4Repository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\CallTrackingRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\CMSRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\CredentialRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\NUBCRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\PaperRequestRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\PartyRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\ProviderFeedRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\RDMRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\StagingDataRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\StateRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\UploadAttachmentRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\WPCRepository.cs" />
-    <Compile Include="DataAccessUpgrade\Repositories\RegistrationProviderRepository.cs" />
+    <Compile Include="PDMS.DataAccess\DBHelpers\SqlDataAccessHelper.cs" />
+    <Compile Include="PDMS.DataAccess\DBHelpers\SqlReaderExtensions.cs" />
+    <Compile Include="PDMS.DataAccess\Helpers\AppConfigHelper.cs" />
+    <Compile Include="PDMS.DataAccess\Models\AchFeeInformationByPartyIDModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\AchFeeInformationModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\AchFeeResultsModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\AddressStagingTypesModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\C4CodeSetStatusModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\CALLTRACKINGCALLSBYRANGEModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\CMSCodeSetStatusModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\COMMITTEEACTIVITYSTATUSModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\CommitteeCredentialActivityModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\COMMITTEEMEMBERModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\CredentialActivityByIdModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\CredentialingResultModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\CredentialingScreeningActivityModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\DashboardProviderSummaryModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\DashboardStatisticsGroupsModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\DashboardStatisticsGroupsServicesModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\DashboardStatisticsGroupTotalsModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\DashboardStatisticsModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\GroupMemberProfileForDashboardsModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\MedicaidIdByUserNameModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\ProviderInfoFromUserModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\StagingProviderEnrollmentByTransactionQueueIDModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\InsertCommitteeCredentialActivityModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\MedicaidIDsByMedicaidIDModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\NUBCCodeSetStatusModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PaperRequestByDocumentHandleModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PaperRequestDashboardsModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PAPERREQUESTDOCUMENTByQueueIDModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PAPERREQUESTERROROutstandingByQueueIDModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PAPERREQUESTQUEUEByQueueIDModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PAPERREQUESTQUEUEByUserIDModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PAPERREQUESTQUEUEMatchDataModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PARTYERRORHISTORYModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\PROVIDERCredentialingModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\ProviderNotesModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\RDMCodeSetstatusModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\REGCredentialingCOMMENTSModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\REGHEALTHCAREFACILITYAFFILIATIONModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\REGProviderFeedModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\REQUIRECDSStatesModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\ScreeningActivityUrlModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\StatesModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\UpdateCOMMITTEECREDENTIALACTIVITYModelResult.cs" />
+    <Compile Include="PDMS.DataAccess\Models\UploadAttachmentStatusModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\USStatesModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\WPCCodeSetStatusModel.cs" />
+    <Compile Include="PDMS.DataAccess\Models\RegistrationProviderInfoModel.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IACHRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IAuthenticationRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IC4Repository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\ICMSRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\ICallTrackingRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\ICredentialRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\INUBCRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IPaperRequestRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IPartyRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IProviderFeedRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IRDMRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IRegistrationProviderRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IStagingDataRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IStateRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IUploadAttachmentRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Interfaces\IWPCRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\ACHRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\AuthenticationRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\C4Repository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\CallTrackingRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\CMSRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\CredentialRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\NUBCRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\PaperRequestRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\PartyRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\ProviderFeedRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\RDMRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\StagingDataRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\StateRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\UploadAttachmentRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\WPCRepository.cs" />
+    <Compile Include="PDMS.DataAccess\Repositories\RegistrationProviderRepository.cs" />
     <Compile Include="DataExtensions.cs" />
     <Compile Include="DIDDController.cs" />
     <Compile Include="DocumentsAndReportsController.cs" />
@@ -179,42 +195,33 @@
     <Compile Include="WPCController.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CoreLibraries\AppSettings\AppSettings.csproj">
-      <Project>{99469857-55b2-4105-96f4-85c1b44e74d6}</Project>
-      <Name>AppSettings</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CoreLibraries\Common\Common.csproj">
-      <Project>{8C8433D2-2E2C-4A6E-9F3F-82AD7665729F}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CoreLibraries\DataAccess\DataAccess.csproj">
-      <Project>{B18C00DF-61BA-4650-ADC7-D8736741B5B8}</Project>
-      <Name>DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CoreLibraries\Exceptions\Exceptions.csproj">
-      <Project>{D9D2F83F-7A01-4FF1-92CC-6B6241195959}</Project>
-      <Name>Exceptions</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CoreLibraries\Logging\Logging.csproj">
-      <Project>{e640b94b-2908-4aad-9f47-00dafe871902}</Project>
-      <Name>Logging</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\CoreLibraries\Notifications\Notifications.csproj">
-      <Project>{818fa6b3-06b0-4b0a-84b3-02348904ee64}</Project>
-      <Name>Notifications</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Models\Model.csproj">
-      <Project>{4e52102f-0f6f-4809-a522-85585a6409f5}</Project>
-      <Name>Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ObjectLibrary\ObjectLibrary.csproj">
-      <Project>{7AB04DF6-D3F9-49A4-9841-5D216F747ED3}</Project>
-      <Name>ObjectLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PdmsWebEvents\PdmsWebEvents.csproj">
-      <Project>{c6ee17e8-2515-406f-82d8-b7d124001341}</Project>
-      <Name>PdmsWebEvents</Name>
-    </ProjectReference>
+    <Reference Include="AppSettings">
+      <HintPath>bin\Debug\AppSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Common">
+      <HintPath>bin\Debug\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DataAccess">
+      <HintPath>bin\Debug\DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Exception">
+      <HintPath>bin\Debug\Exception.dll</HintPath>
+    </Reference>
+    <Reference Include="Logging">
+      <HintPath>bin\Debug\Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Notifications">
+      <HintPath>bin\Debug\Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="Models">
+      <HintPath>bin\Debug\Models.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectLibrary">
+      <HintPath>bin\Debug\ObjectLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PdmsWebEvents">
+      <HintPath>bin\Debug\PdmsWebEvents.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\CoreLibraries\AppSettings\AppSettings.dll.config">
