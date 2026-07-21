@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectControllers", "Object
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDMS.Api", "PDMS.Api\PDMS.Api.csproj", "{0AD7F6AC-C4A0-4C0D-8678-645C2A7229C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDMS.DataAccess", "ObjectControllers\PDMS.DataAccess\PDMS.DataAccess.csproj", "{30BE2269-7384-4CDA-A031-217D117EA50D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDMS.DataAccess", "PDMS.DataAccess\PDMS.DataAccess.csproj", "{30BE2269-7384-4CDA-A031-217D117EA50D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
